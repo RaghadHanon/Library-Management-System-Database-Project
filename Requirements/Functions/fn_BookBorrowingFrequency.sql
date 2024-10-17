@@ -5,8 +5,8 @@ BEGIN
  DECLARE @BookBorrowingFrequency INT;
  SELECT @BookBorrowingFrequency = COUNT(BookID) 
                                   FROM Loans 
-								  WHERE BookID = @BookID
-								  Group By BookID;
+				  WHERE BookID = @BookID
+				  Group By BookID;
  RETURN @BookBorrowingFrequency;
 END;
 
