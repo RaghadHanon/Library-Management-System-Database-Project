@@ -347,7 +347,6 @@ BEGIN
  ORDER BY DateBorrowed;
 END;
 
--- Example Execution
 EXEC sp_BorrowedBooksReport '2024-01-01', '2024-01-31';
 ```
 - **Rationale**: This procedure allows the library to generate a report of all books borrowed within a specified date range, displaying relevant borrower and loan details.
